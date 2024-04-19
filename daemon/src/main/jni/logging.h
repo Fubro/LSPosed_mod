@@ -28,6 +28,8 @@
 #define LOG_TAG    "LSPosed"
 #endif
 
+#define LOG_DISABLED
+
 #ifdef LOG_DISABLED
 #define LOGD(...) 0
 #define LOGV(...) 0
