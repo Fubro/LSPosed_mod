@@ -29,12 +29,15 @@
 #define LOG_TAG    "LSPosed"
 #endif
 
+#define LOG_DISABLED
+
 #ifdef LOG_DISABLED
 #define LOGD(...) 0
 #define LOGV(...) 0
 #define LOGI(...) 0
 #define LOGW(...) 0
 #define LOGE(...) 0
+#define PLOGE(...) 0
 #else
 template <typename... T>
 constexpr inline void LOG(int prio, const char* tag, fmt::format_string<T...> fmt, T&&... args) {
